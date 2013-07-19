@@ -157,7 +157,7 @@ int main( int argc, char* argv[] )
     // Load server configuration
     if( !sConfig.ParseFile( CONFIG_FILE ) )
     {
-        printf("ERROR: Loading server configuration '%s' failed.", CONFIG_FILE );
+        printf("ERROR: Loading server configuration '%s' failed. Configuration is invalid or File not found.", CONFIG_FILE );
         //sLog.Error( "server init", "Loading server configuration '%s' failed.", CONFIG_FILE );
         std::cout << std::endl << "press any key to exit...";  std::cin.get();
         return 1;
